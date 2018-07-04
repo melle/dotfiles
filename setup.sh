@@ -38,4 +38,4 @@ symlink .bash_aliases
 symlink .profile
 symlink .bash_sensible
 symlink .git-completion.sh
-
+symlink .config
