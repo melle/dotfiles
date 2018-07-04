@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export LC_ALL=en_US.UTF-8
+export EDITOR="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code -w"
