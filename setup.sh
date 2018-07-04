@@ -32,7 +32,10 @@ defaults write com.apple.finder ShowStatusBar -bool true # Show status bar
 
 # symlink everything
 symlink .bashrc
+symlink .bash_config
 symlink .bash_environment
 symlink .bash_aliases
 symlink .profile
+symlink .bash_sensible
+symlink .git-completion.sh
 
