@@ -1,5 +1,6 @@
 #!/bin/bash
-set -ef
+set -e
+set -o pipefail
 
 FORCE=false
 if [ "$1XX" = "-fXX" ]; then
