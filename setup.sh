@@ -32,12 +32,7 @@ defaults write com.apple.finder ShowPathbar -bool true   # Show path bar
 defaults write com.apple.finder ShowStatusBar -bool true # Show status bar
 
 # symlink everything
-symlink .bashrc
-symlink .bash_config
-symlink .bash_environment
-symlink .bash_aliases
-symlink .profile
-symlink .bash_sensible
-symlink .git-completion.sh
-symlink .config
+symlink .zprofile
+symlink .zshrc
+symlink .gitconfig
 symlink .vimrc
