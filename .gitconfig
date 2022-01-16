@@ -4,6 +4,7 @@
 [core]
     pager = delta
     editor = vim
+	excludesfile = /Users/melle/.gitignore_global
 
 [color]
 	ui = auto
@@ -19,8 +20,8 @@
 
 [delta]
     #  side-by-side = true
-    plus-color = "#012800"
-    minus-color = "#340001"
+    plus-style = syntax "#012800"
+    minus-style = normal "#340001"
     syntax-theme = Monokai Extended
     features = decorations
 
@@ -49,14 +50,20 @@
 [diff]
 	tool = Kaleidoscope
 
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+
+[mergetool]
+	prompt = false
 
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
 
-[mergetool]
-	prompt = false
-
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
 
 [pull]
 	rebase = true

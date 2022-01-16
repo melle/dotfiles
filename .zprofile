@@ -5,5 +5,5 @@ alias ll='ls -laG'
 
 # Env
 export LC_ALL=en_US.UTF-8
-export PATH=$PATH:~/bin
+export PATH=$PATH:~/bin:/opt/homebrew/bin/
 export EDITOR="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code -w"
